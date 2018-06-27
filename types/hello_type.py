@@ -12,3 +12,5 @@ for obj in objects:
 # modules are objects
 # functions are objects
 # classes are objects (more on this)
+
+# type on type on type on type
