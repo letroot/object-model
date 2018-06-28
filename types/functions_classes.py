@@ -7,6 +7,7 @@ def rhyme():
 
 # An object has properties and methods
 # print(type(rhyme))
+# TODO
 # call function using its method
 # print docstring
 # print string representation
@@ -31,5 +32,5 @@ class Signal:
 # of the type list" is synonymous with [1, 2, 3] is a list object"
 
 
-# Using the isinstance built-in function
-# print(isinstance('freedom', str)) # True
+# How to use the isinstance built-in function
+# TODO
