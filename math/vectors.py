@@ -17,5 +17,5 @@ class Vector:
 
 
     def __repr__(self):
-        # Why %r? and not f-strings or format? 
+        # Why %r? and not f-strings or format?
         return "Vector(%r, %r)" % self.x, self.y
