@@ -9,18 +9,15 @@ import csv
 from pprint import pprint
 from random import choice
 
+LIBRARY_CSV = "data\\rap_albums.csv"
+# talk about namedtuples
 Album = collections.namedtuple("Album", ['rapper', 'title', 'year'])
 
 class RapLibrary:
     albums = None
 
     def __init__(self, csv_path):
-        with open(csv_path, newline='') as csvfile:
-            reader = csv.DictReader(csvfile)
-            # self.encodings
-            self.albums = [Album(rapper=row['rapper'],
-                                 title=row['title'],
-                                 year=row['year']) for row in reader]
+        pass
 
-# about namedtuples
-# RapLibrary("data/rap_album.csv")
+
+raplib = RapLibrary(LIBRARY_CSV)
