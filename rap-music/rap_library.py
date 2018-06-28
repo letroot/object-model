@@ -23,12 +23,6 @@ class RapLibrary:
 raplib = RapLibrary(LIBRARY_CSV)
 
 
-
-
-
-
-
-
 # slicing and indexing
 
 # Exercise 1: implement our own __contains__
