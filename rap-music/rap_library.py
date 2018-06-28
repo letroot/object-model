@@ -17,10 +17,26 @@ class RapLibrary:
     albums = None
 
     def __init__(self, csv_path):
-        pass
+        with open(LIBRARY_CSV, newline='') as csvfile:
+            reader = csv.DictReader(csvfile)
+            self.encodings = "flac mp3 wma aac wav m4a ogg m3u".split()
+            self.albums = [Album(rapper=row['rapper'],
+                                 title=row['title'],
+                                 year=row['year']) for row in reader]
 
+    def __getitem__(self, index):
+        return self.albums[index]
+
+    def __len__(self):
+        return len(self.albums)
 
 raplib = RapLibrary(LIBRARY_CSV)
+
+
+
+
+
+print(raplib[5:-1])
 
 
 # slicing and indexing
@@ -37,7 +53,7 @@ raplib = RapLibrary(LIBRARY_CSV)
 #     print(album)
 
 
-# """Special methods are called by the Python interpreter.
-# Notice that we don't say raplib.__len__() but len(..)
-# except in special cases (actually more than a few cases)
-# when you would want to specifically call the magic method,
+"""Special methods are called by the Python interpreter.
+Notice that we don't say raplib.__len__() but len(..)
+except in special cases (actually more than a few cases)
+when you would want to specifically call the magic method,"""
