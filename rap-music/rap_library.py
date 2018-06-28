@@ -21,3 +21,29 @@ class RapLibrary:
 
 
 raplib = RapLibrary(LIBRARY_CSV)
+
+
+
+
+
+
+
+
+# slicing and indexing
+
+# Exercise 1: implement our own __contains__
+# check for presence of object
+
+
+# Exercise 2: sort by rapper name
+# def sort_fn():
+#     pass
+
+# for album in sorted(raplib, key=sort_fn):
+#     print(album)
+
+
+# """Special methods are called by the Python interpreter.
+# Notice that we don't say raplib.__len__() but len(..)
+# except in special cases (actually more than a few cases)
+# when you would want to specifically call the magic method,
