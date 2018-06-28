@@ -7,12 +7,13 @@ def rhyme():
 
 # An object has properties and methods
 # print(type(rhyme))
-# rhyme.__call__()
-# print(rhyme.__doc__)
-# print(rhyme.__str__())
+# call function using its method
+# print docstring
+# print string representation
 
 
 class Signal:
+    """Enigma code."""
     pass
 
 
@@ -28,3 +29,7 @@ class Signal:
 
 # objects are instances of types. So, "[1, 2, 3] is an instance
 # of the type list" is synonymous with [1, 2, 3] is a list object"
+
+
+# Using the isinstance built-in function
+# print(isinstance('freedom', str)) # True
