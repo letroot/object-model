@@ -1,4 +1,5 @@
 # object-model
+Code demo for a talk I gave on the Python Object Model.
 
 ### Getting started
 `git clone https://github.com/letroot/object-model.git`
